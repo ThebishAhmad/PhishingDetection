@@ -1,10 +1,4 @@
-# ------------------------------------------------------------------
-# PHISHING DETECTION USING MACHINE LEARNING - DATA PREPROCESSING ONLY
-# ------------------------------------------------------------------
 
-# ------------------------------------------------------------
-# INSTALL REQUIRED LIBRARIES FOR DATA PREPROCESSING
-# ------------------------------------------------------------
 
 install_if_missing <- function(packages) {
   new.packages <- packages[!(packages %in% installed.packages()[, "Package"])]
@@ -137,3 +131,4 @@ write.csv(train, "C:/Users/uv488/Downloads/preprocessed_train.csv", row.names = 
 write.csv(test, "C:/Users/uv488/Downloads/preprocessed_test.csv", row.names = FALSE)
 
 cat("\n✅ Data preprocessing complete! Clean datasets saved.\n")
+
